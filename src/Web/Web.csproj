@@ -4,10 +4,6 @@
 		<TargetFramework>netcoreapp2.1</TargetFramework>
 		<RootNamespace>Microsoft.eShopWeb.Web</RootNamespace>
 	</PropertyGroup>
-	 
-	 <PropertyGroup Condition="'$(TargetFramework)' == 'net45'">
-  <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Dapper" Version="1.50.5" />
