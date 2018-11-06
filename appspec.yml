@@ -1,8 +1,10 @@
 version: 0.0
 os: windows
 files:
-  - source: \*
+  - source: \wwwroot\
     destination: c:\inetpub\wwwroot\
+  - source: \*.*
+    destination: c:\inetpub\wwwroot\bin\
   - source: \Scripts\deletewebsite.ps1
     destination: c:\temp
   - source: \Scripts\installwebsite.ps1
