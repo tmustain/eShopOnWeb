@@ -1,8 +1,8 @@
 version: 0.0
 os: windows
 files:
-  - source: \publish\
-    destination: c:\inetpub\wwwroot\
+  - source: \out\
+    destination: c:\inetpub\wwwroot\eshop\
   - source: \Scripts\deletewebsite.ps1
     destination: c:\temp
   - source: \Scripts\installwebsite.ps1
