@@ -1,15 +1,7 @@
 version: 0.0
 os: windows
 files:
-  - source: \wwwroot\
-    destination: c:\inetpub\wwwroot\
-  - source: \*.dll
-    destination: c:\inetpub\wwwroot\
-  - source: \*.pdb
-    destination: c:\inetpub\wwwroot\
-  - source: \*.json
-    destination: c:\inetpub\wwwroot\
-  - source: \*.config
+  - source: \publish\
     destination: c:\inetpub\wwwroot\
   - source: \Scripts\deletewebsite.ps1
     destination: c:\temp
