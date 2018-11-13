@@ -23,8 +23,7 @@ namespace Microsoft.eShopWeb.Web
                 try
                 {
                     var catalogContext = services.GetRequiredService<CatalogContext>();
-                    CatalogContextSeed.SeedAsync(catalogContext, loggerFactory)
-            .Wait();
+                    CatalogContextSeed.SeedAsync(catalogContext, loggerFactory).Wait();
 
                     var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
                     AppIdentityDbContextSeed.SeedAsync(userManager).Wait();
@@ -42,6 +41,7 @@ namespace Microsoft.eShopWeb.Web
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
                 .UseUrls("http://0.0.0.0:5106")
+                .UseIISIntegration()
                 .UseStartup<Startup>();
     }
 }

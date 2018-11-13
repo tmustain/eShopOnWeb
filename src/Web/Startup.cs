@@ -101,7 +101,6 @@ namespace Microsoft.eShopWeb.Web
 
             // Add memory cache services
             services.AddMemoryCache();
-
             services.AddMvc()
                 .SetCompatibilityVersion(AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
 
