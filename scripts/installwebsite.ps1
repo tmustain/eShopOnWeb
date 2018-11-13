@@ -35,6 +35,3 @@ if (Test-Path $iisAppName -pathType container)
 $iisApp = New-Item $iisAppName -bindings @{protocol="http";bindingInformation=":80:"} -physicalPath $directoryPath
 $iisApp | Set-ItemProperty -Name "applicationPool" -Value $iisAppPoolName
 Set-ItemProperty $iisAppName serverAutoStart True
-
-#set env var
-[Environment]::SetEnvironmentVariable("ASPNETCORE_ENVIRONMENT", "Development", "Machine")
