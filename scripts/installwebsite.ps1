@@ -1,6 +1,6 @@
 Import-Module WebAdministration
 $iisAppPoolName = "eshop-app"
-$iisAppPoolDotNetVersion = "v4.0"
+$iisAppPoolDotNetVersion = ""
 $iisAppName = "eshop"
 $directoryPath = "C:\inetpub\wwwroot\eshop"
 
