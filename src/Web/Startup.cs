@@ -36,6 +36,7 @@ namespace Microsoft.eShopWeb.Web
 
             // use real database
             // ConfigureProductionServices(services);
+            
         }
 
         private void ConfigureInMemoryDatabases(IServiceCollection services)
